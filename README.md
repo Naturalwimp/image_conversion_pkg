@@ -6,7 +6,7 @@ A ROS 2 package to convert images from a USB camera to grayscale or keep them in
 Clone this repository into your ROS 2 workspace:
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/<your-username>/image_conversion_pkg.git
+git clone https://github.com/Naturalwimp/image_conversion_pkg.git
 cd ~/ros2_ws
 colcon build
 source install/setup.bash
