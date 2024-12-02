@@ -7,7 +7,7 @@ Install th usb_cam package in your workspace:
 ```bash
 sudo apt-get install ros-<ros2-distro>-usb-cam
 ```
-My sustem consists of ROS2 Humble for this package
+My system consists of ROS2 Humble for this package
 
 ## Installation
 Clone this repository into your ROS 2 workspace:
