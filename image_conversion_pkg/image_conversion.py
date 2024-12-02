@@ -10,7 +10,7 @@ class ImageConversionNode(Node):
         super().__init__('image_conversion_node')
 
         # Parameters
-        self.declare_parameter('input_topic', 'camera1/image_raw')
+        self.declare_parameter('input_topic', '/camera1/image_raw')
         self.declare_parameter('output_topic', '/image_converted')
         
         self.input_topic = self.get_parameter('input_topic').value
@@ -58,18 +58,11 @@ class ImageConversionNode(Node):
             converted_msg.header = msg.header
             self.publisher.publish(converted_msg)
 
-            cv2.namedWindow("Output Image", cv2.WINDOW_NORMAL)
-            cv2.imshow("Output Image", cv_image)
-
             # Display the image
             if self.mode == 1:
-                # self.get_logger().info("Displaying image")
                 cv2.imshow("Output Image (Greyscale)", cv_image)
-                # self.get_logger().info("Image displayed")
             else:
-                # self.get_logger().info("Displaying image")
                 cv2.imshow("Output Image (Color)", cv_image)
-                # self.get_logger().info("Image displayed")
             
             # Wait for a key event for 1ms to process GUI events
             cv2.waitKey(1)
