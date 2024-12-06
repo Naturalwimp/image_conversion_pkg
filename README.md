@@ -34,5 +34,8 @@ ros2 service call /set_mode std_srvs/srv/SetBool "{data: false}" # Set to Color
 
 ## Results
 
+###Grey-Scale ROS_Service Enabled
 ![Screenshot from 2024-12-06 20-07-10](https://github.com/user-attachments/assets/69da2e1f-600a-4be1-a1d7-d8b79fa47bd4)
+
+###RGB-Scale ROS_Service Enabled
 ![Screenshot from 2024-12-06 20-06-43](https://github.com/user-attachments/assets/b514fe38-dd98-41a0-953d-dcfa6870a686)
